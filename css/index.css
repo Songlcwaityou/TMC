@@ -1,0 +1,178 @@
+/*公共样式*/
+a{
+	text-decoration: none;
+	color:#fff;
+}
+a:hover{
+	color:#73BC02;
+}
+
+.inner{
+	width: 980px;
+	margin:0 auto;
+}
+body{
+	font-size: 14px;
+	font-family: "Arial","Microsoft Yahei","SimSun";
+	line-height: 22px;
+	color:#808080;
+}
+
+/*header部分*/
+.header{
+	height:196px;
+	background-color: #080808;
+	overflow: hidden;
+}
+.header .logo{
+	float: left;
+	width: 367px;
+	height: 72px;
+	padding: 34px 0 0 30px;
+}
+.header .logo a{
+	display: block;
+	width: 266px;
+	height: 47px;
+	background: url(../images/logo.png);
+	text-indent: -888em;
+	overflow: hidden;
+}
+.header .nav{
+	float: left;
+	padding: 25px 0 26px;
+	overflow: hidden;
+}
+.header .nav ul li{
+	float: left;
+}
+.header .nav ul li a{
+	display: block;
+	padding:0 30px 0 26px;
+	line-height: 55px;
+	background: url(../images/menu-spacer.gif) right top no-repeat;
+	font-size: 15px;
+	font-weight: bold;
+}
+.header .nav ul li:last-child a{
+	background-image: none;
+}
+.header .nav ul li.cur a{
+	color:#60B001;
+}
+
+/*content部分*/
+.content{
+	background: url(../images/content-bg.jpg) no-repeat center top;
+	background-size: cover;
+	padding:30px 0;
+}
+.content .carousel{
+	margin-top: -120px;
+	width: 930px;
+	height: 470px;
+	background: url(../images/slider-bg.png);
+	padding:20px 20px 0 30px;
+}
+.content .carousel .circles{
+	float: left;
+	width: 100px;
+}
+.content .carousel .circles ol li{
+	width: 100px;
+	height: 70px;
+	margin-bottom: 1px;
+}
+.content .carousel .circles ol li a{
+	display: block;
+	width: 90px;
+	height: 60px;
+	background: url(../images/pagination-a.png) no-repeat 0 -70px;
+	padding:10px 0px 0px 10px;
+}
+.content .carousel .circles ol li.cur a,
+.content .carousel .circles ol li a:hover{
+	background-position: 0px 0px;
+}
+.content .carousel .circles ol li a span{
+	display: block;
+	width: 50px;
+	height: 50px;
+	background: url(../images/pagin-1.png);
+	font-size: 26px;
+	text-align: center;
+	line-height: 50px;
+	color:#fff;
+	font-weight: bold;
+}
+.content .carousel .circles ol li:nth-child(2) a span{
+	background-image: url(../images/pagin-2.png);
+}
+.content .carousel .circles ol li:nth-child(3) a span{
+	background-image: url(../images/pagin-3.png);
+}
+.content .carousel .circles ol li:nth-child(4) a span{
+	background-image: url(../images/pagin-4.png);
+}
+.content .carousel .imgs{
+	float: left;
+	width: 830px;
+	height: 431px;
+	position: relative;
+}
+.content .carousel .imgs ul li{
+	position: absolute;
+	left:0px;
+	top:0px;
+	width: 830px;
+	height: 431px;
+}
+.content .carousel .imgs ul li.active{
+	z-index: 10;
+}
+.content .carousel .imgs ul li .mask{
+	position: absolute;
+	width: 300px;
+	height: 370px;
+	background: url(../images/banner-bg.png);
+	right:0px;
+	top:0px;
+	padding-top: 61px;
+	text-align: center;
+}
+.content .carousel .imgs ul li .mask .close{
+	position: absolute;
+	width: 13px;
+	height: 13px;
+	right:20px;
+	top:20px;
+	background: url(../images/close.gif);
+	cursor:pointer ;
+}
+.content .carousel .imgs ul li .mask h3{
+	line-height: 70px;
+	font-size: 38px;
+	color:#fff;
+	font-weight: bold;
+}
+.content .carousel .imgs ul li .mask h4{
+	font-size: 12px;
+	color:#fff;
+}
+.content .carousel .imgs ul li .mask .txt{
+	margin-top: 31px;
+	line-height: 28px;
+	font-size: 12px;
+	color:#fff;
+}
+.content .carousel .imgs ul li .mask .more{
+	display: block;
+	width: 120px;
+	height: 40px;
+	margin:33px auto 0px;
+	line-height: 40px;
+	background-color: #fff;
+	color:#000000;
+	font-size: 12px;
+}
+
